@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuntawat Fangritlong - Cloud Engineer</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Nuntawat Fangritlong</h1>
+            <h2>Cloud Engineer</h2>
+            
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>+66 809-7465-14</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>nuntawat.works@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>358 Sukhumvit Soi 97/1, Bangkok</span>
+                </div>
+            </div>
+
+            <div class="action-buttons">
+                <button class="btn btn-primary" onclick="openContactModal()">
+                    <i class="fas fa-envelope"></i>
+                    Contact Me
+                </button>
+                <button class="btn btn-secondary" onclick="downloadResume()">
+                    <i class="fas fa-download"></i>
+                    Download Resume
+                </button>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="card">
+                <h3><i class="fas fa-briefcase"></i> Work Experience</h3>
+                
+                <div class="experience-item">
+                    <h4>Cloud Engineer</h4>
+                    <div class="company">Trade Square</div>
+                    <div class="duration">2024 - 2025</div>
+                    <div class="description">
+                        Cloud and DevOps Engineer with experience in AWS, automation, and containerization
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <h4>Cloud Engineer</h4>
+                    <div class="company">Fujitsu (Thailand) Co., Ltd.</div>
+                    <div class="duration">2023 - 2024</div>
+                    <div class="description">
+                        Experienced in both on-premises and cloud environments with AWS migration and presale activities
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <h4>System & Network Engineer</h4>
+                    <div class="company">Tri Petch IT Solutions Co., Ltd.</div>
+                    <div class="duration">2022 - 2023</div>
+                    <div class="description">
+                        Network engineering specialist with expertise in network, server, security and automation solutions
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <h4>System & Network Engineer</h4>
+                    <div class="company">Pro Inside Co., Ltd.</div>
+                    <div class="duration">2020 - 2022</div>
+                    <div class="description">
+                        Worked in System Integration (SI), responsible for server configuration, network infrastructure and firewall security management
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3><i class="fas fa-cogs"></i> Skills & Expertise</h3>
+                
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h4>Cloud Platforms</h4>
+                        <p>AWS, Azure<br>Migration & Design</p>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Automation</h4>
+                        <p>Ansible, Terraform<br>Jenkins, Scripting</p>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Monitoring</h4>
+                        <p>Grafana, Prometheus<br>Loki, VA Scans</p>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Network</h4>
+                        <p>Cisco, Huawei<br>VLAN, Trunk, DNA Center</p>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Security</h4>
+                        <p>Firewalls (Sophos, Fortigate)<br>OPNsense, pfSense</p>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Containers</h4>
+                        <p>Docker, ECS<br>HAProxy, Squid Proxy</p>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Server Management</h4>
+                        <p>Windows Server, Linux<br>VMware ESXi, vCenter</p>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Development</h4>
+                        <p>Angular, Laravel<br>Bootstrap, Angular Material</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+            <div class="experience-item">
+                <h4>Bachelor of Computer Science</h4>
+                <div class="company">Mahasarakham University</div>
+                <div class="duration">2016 - 2019</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="floating-contact">
+        <button class="floating-btn" onclick="openContactModal()" title="Contact Me">
+            <i class="fas fa-comment"></i>
+        </button>
+    </div>
+
+    <div class="footer">
+        <p>© 2025 Nuntawat Fangritlong - Cloud Engineer</p>
+    </div>
+
+    <!-- Contact Modal -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeContactModal()">&times;</span>
+            <h2 style="color: #667eea; margin-bottom: 20px;">
+                <i class="fas fa-envelope"></i> Contact Me
+            </h2>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">
+                    <i class="fas fa-paper-plane"></i>
+                    Send Message
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+{
+  "name": "nuntawat-portfolio",
+  "version": "1.0.0",
+  "description": "Modern portfolio website for Nuntawat Fangritlong - Cloud Engineer",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx http-server . -p 3000 -o",
+    "dev": "npx http-server . -p 3000 -o -c-1",
+    "build": "echo 'No build process needed for static site'",
+    "deploy": "echo 'Deploy to your preferred hosting service'"
+  },
+  "keywords": [
+    "portfolio",
+    "cloud-engineer",
+    "resume",
+    "website",
+    "html",
+    "css",
+    "javascript"
+  ],
+  "author": {
+    "name": "Nuntawat Fangritlong",
+    "email": "nuntawat.works@gmail.com",
+    "phone": "+66 809-7465-14"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^3.11.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/nuntawat-portfolio.git"
+  },
+  "homepage": "https://yourusername.github.io/nuntawat-portfolio",
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
